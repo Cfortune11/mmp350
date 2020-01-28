@@ -1,0 +1,25 @@
+body {
+	background-color:#c8b1ae; 
+	font-family: Helvetica;
+	font-size: 20px;
+	color: #2b5e73;
+
+}
+
+a {
+	color: #6819A1;
+	padding:0.25em;
+	transition: backround-color 300ms ;
+}
+
+a:hover {
+	background-color: #A6BBDC;
+}
+
+ul {
+	padding: 0;
+}
+
+li { 
+	list-style: none;
+}
