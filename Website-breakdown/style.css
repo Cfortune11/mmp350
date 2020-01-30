@@ -1,0 +1,26 @@
+body{
+	background:57D4DE ;
+	color:154360 ;
+	font-family:Ariel Black ;
+}
+
+p{
+	font-size: 1.5m;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+hr{
+	border: none;
+	border-top: 1px solid #154360;
+}
+
+
+#container{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
