@@ -17,5 +17,5 @@ function onError(errorMessage){
 }
 
 function userLoggedIn(uid, displayName) {
-	loginUsername.textContent = "Welcome" + displayName;
+	userName.textContent = "Welcome" + displayName + ".";
 }
