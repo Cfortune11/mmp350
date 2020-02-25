@@ -11,6 +11,13 @@ loginButton.onclick = function() {
 	//loginMessage.textContent = "You logged in.";
 
 };
+     // adds login for hitting enter
+loginPassword.addEventListener("keyup", function() {
+	if (event.which == 13) {
+	fb.login(loginEmail.value,loginPassword.value);
+	
+	}
+});
 
 function onError(errorMessage){
 	loginMessage.textContent = errorMessage
