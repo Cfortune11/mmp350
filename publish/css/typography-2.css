@@ -1,21 +1,45 @@
 /*
-	type pairing 2
-	font-family: 'Tomorrow', sans-serif;
-	font-family: 'Kalam', cursive;
+	font-family: 'Titillium Web', ;
+font-family: 'Akronim', ;
 */
 
-h1,
-input,
-button,
-textarea {
-	font-family: 'Kalam', cursive;
+.post,
+input {
+	font-family:'Titillium Web', serif;
 }
 
-.post,
-a {
-	font-family: 'Tomorrow', sans-serif;
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Akronim', cursive;
+}
+
+button {
+	font-size: 1.125em;
+}
+
+
+.post {
+	line-height: 1.2;
+}
+
+.post-text {
+	font-size: 1.25em;
+}
+
+.post-info {
+	color: gray;
+}
+
+.post-author {
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color: darkblue;
 }
 
 .post-date {
-	color: gray;
+	font-size: 0.5em;
 }

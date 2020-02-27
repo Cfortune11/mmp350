@@ -2,7 +2,7 @@ const loginEmail = document.getElementById("login-email");
 const loginPassword = document.getElementById("login-password");
 const loginButton = document.getElementById("login-button");
 const loginMessage = document.getElementById("login-message");
-const loginUsername = document.getElementById("login-username");
+const userName = document.getElementById("user-name");
 
 
 loginButton.onclick = function() {
