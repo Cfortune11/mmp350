@@ -3,7 +3,7 @@ const posts = js.getEl('posts');
 function createPost(postData, userInfo, postId) {
 	const post = js.createEl('div', 'post');
 
-	posts.insertBefore(posts, posts.firstElementChild);
+	posts.insertBefore(post, posts.firstElementChild);
 
 
 

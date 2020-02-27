@@ -2,7 +2,7 @@ const loginEmail = document.getElementById("login-email");
 const loginPassword = document.getElementById("login-password");
 const loginButton = document.getElementById("login-button");
 const loginMessage = document.getElementById("login-message");
-const userName = document.getElementById("user-name");
+const userName = document.getElementById("login-username");
 
 
 loginButton.onclick = function() {
@@ -12,7 +12,7 @@ loginButton.onclick = function() {
 
 };
      // adds login for hitting enter
-loginPassword.addEventListener("keyup", function() {
+loginPassword.addEventListener('keyup', function(event) {
 	if (event.which == 13) {
 	fb.login(loginEmail.value,loginPassword.value);
 	
