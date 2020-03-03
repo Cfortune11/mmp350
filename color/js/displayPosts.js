@@ -17,7 +17,7 @@ post.appendChild(author);
 
 const date = js.createEl('div', 'post-date', js.formatDate(postData.date));
 
-postInfo.appendChild(date);
+postInfo.appendChild(date)
 
 console.log(date);	
 }
