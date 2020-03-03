@@ -5,19 +5,19 @@ function createPost(postData, userInfo, postId, postDate, postAuthor) {
 
 	posts.insertBefore(post, posts.firstElementChild);
 
-const text: js.createEl('div', 'post-text', postData.text);
+const text = js.createEl('div', 'post-text', postData.text);
 post.appendChild(text);
 
-const text: js.createEl('div','post-info');
+const postInfo = js.createEl('div','post-info');
 post.appendChild(postInfo);
 
-const text: js.createEl('div', 'post-author', userInfo.displayName);
+const author = js.createEl('div', 'post-author', userInfo.displayName);
 post.appendChild(author);
 
 
 const date = js.createEl('div', 'post-date', js.formatDate(postData.date));
 
-postInfo.appendChild(date)
+postInfo.appendChild(date);
 
 console.log(date);	
 }
