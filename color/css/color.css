@@ -13,31 +13,31 @@
 	/* orange analagous color scheme */
 	--main-color: #FFD908;
 	--accent-color: #E8AF05;
-	--placeholder-color: var(--accent-color);
+	--placeholder-color: var (#FFC400);
 }
 
 button, input, textarea {
-	background-color: var(--main-color);
-	border-color: var(--accent-color);
-	color: var(--placeholder-color);
+	background-color: var (#FFD908);
+	border-color: var (#E8AF05);
+	color: var (#FFC400);
 }
 
 button::placeholder, input::placeholder, textarea::placeholder {
-	color: var(--accent-color);
+	color: var (#00CCAA);
 }
 
 a {
-	color: var(--accent-color);
+	color: var (#00CCAA);
 }
 
 a:hover {
-	color: var(--main-color);
+	color: var (#FFD908);
 }
 
 .post {
-	border-color: var(--accent-color);
+	border-color: var (#E8AF05);
 }
 
 #title {
-	color: var(--accent-color);
+	color: var (#00CCAA);
 }
