@@ -2,15 +2,15 @@
 
 /* root is the top most element of the html page */
 :root {
-	analogous blue color scheme 
+	/*analogous blue color scheme */
 	--main-color: #4568D1;
 	--accent-color: #2C88DB;
 	--placeholder-color: #36A5C2;
 	
 }
-/*
+
 :root {
-	 green shades color scheme 
+	 /*green shades color scheme */
 	--main-color:#238200;
 	--accent-color: #124200;
 	--placeholder-color: var(--accent-color);
@@ -18,14 +18,14 @@
 }
 
 :root {
-	 orange triad color scheme 
+	 /*orange triad color scheme */
 	--main-color: #C2762E;
 	--accent-color: #D15D3F;
 	--placeholder-color: var(--accent-color);
 	
 }
 
-*/
+
 
 button, input, textarea {
 	background-color: var(--main-color);
