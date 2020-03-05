@@ -1,29 +1,40 @@
-  
-/* custom properties */
+  /* custom properties */
 
 /* root is the top most element of the html page */
 :root {
-	/* monochomatic green color scheme */
-	--main-color: gold;
-	--accent-color: #6AC300;
-	--placeholder-color: #00C37F;
+	analogous blue color scheme 
+	--main-color: #4568D1;
+	--accent-color: #2C88DB;
+	--placeholder-color: #36A5C2;
+	
+}
+/*
+:root {
+	 green shades color scheme 
+	--main-color:#238200;
+	--accent-color: #124200;
+	--placeholder-color: var(--accent-color);
+	
 }
 
 :root {
-	/* blue analagous color scheme */
-	--main-color: #008BC3;
-	--accent-color: #00DCFF;
+	 orange triad color scheme 
+	--main-color: #C2762E;
+	--accent-color: #D15D3F;
 	--placeholder-color: var(--accent-color);
+	
 }
+
+*/
 
 button, input, textarea {
 	background-color: var(--main-color);
 	border-color: var(--accent-color);
-	color: var(--placeholder-color);
+	color: var(--accent-color);
 }
 
 button::placeholder, input::placeholder, textarea::placeholder {
-	color: var(--accent-color);
+	color: var(--placeholder-color);
 }
 
 a {
