@@ -13,7 +13,7 @@
 	 /*green shades color scheme */
 	--main-color:#238200;
 	--accent-color: #124200;
-	--placeholder-color: var(--accent-color);
+	--placeholder-color: #40ffa3;
 	
 }
 
@@ -21,7 +21,7 @@
 	 /*orange triad color scheme */
 	--main-color: #C2762E;
 	--accent-color: #D15D3F;
-	--placeholder-color: var(--accent-color);
+	--placeholder-color: #ff5640;
 	
 }
 
