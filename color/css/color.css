@@ -1,27 +1,9 @@
-  /* custom properties */
-
-/* root is the top most element of the html page */
-:root {
-	/*analogous blue color scheme */
-	--main-color: #4568D1;
-	--accent-color: #2C88DB;
-	--placeholder-color: #36A5C2;
-	
-}
-
-:root {
-	 /*green shades color scheme */
-	--main-color:#238200;
-	--accent-color: #124200;
-	--placeholder-color: var(--accent-color);
-	
-}
-
+ 
 :root {
 	 /*orange triad color scheme */
-	--main-color: #C2762E;
-	--accent-color: #D15D3F;
-	--placeholder-color: var(--accent-color);
+	--main-color: #0429b0;
+	--accent-color: #5cfffc;
+	--placeholder-color:#9fd2fc;
 	
 }
 
