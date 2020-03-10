@@ -3,6 +3,7 @@ const loginPassword = document.getElementById("login-password");
 const loginButton = document.getElementById("login-button");
 const loginMessage = document.getElementById("login-message");
 const userName = document.getElementById("login-username");
+const logoutButton = document.getElementById("logout-button");
 
 
 loginButton.onclick = function() {
@@ -11,6 +12,11 @@ loginButton.onclick = function() {
 	//loginMessage.textContent = "You logged in.";
 
 };
+
+logoutButton.onclick = funcion() {
+	fb.logout();
+};
+
      // adds login for hitting enter
 loginPassword.addEventListener('keyup', function(event) {
 	if (event.which == 13) {
@@ -25,4 +31,7 @@ function onError(errorMessage){
 
 function userLoggedIn(uid, displayName) {
 	userName.textContent = "Welcome" + displayName + ".";
+
+	document.body.classList.remove('auth');
+
 }

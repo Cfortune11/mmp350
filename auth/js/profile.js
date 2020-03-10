@@ -1,0 +1,1 @@
+const profileUID = location.search.split('=')[1];
