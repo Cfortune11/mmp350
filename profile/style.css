@@ -1,0 +1,15 @@
+/*typography pairing 1 */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Squada+One&display=swap');
+
+/*typography pairing 2 */
+@import url("https://fonts.googleapis.com/css?family=Akronim|Titillium+Web&display=swap" rel="stylesheet");
+
+/*typography pairing 3 */
+@import url("https://fonts.googleapis.com/css?family=Anton|Tomorrow&display=swap" rel="stylesheet");
+
+
+@import "css/main.css";
+@import "css/typography-1.css";
+@import "css/publish.css";
+@import "css/post.css";
+@import "css/color.css";
