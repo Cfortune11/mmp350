@@ -1,4 +1,3 @@
-const loginEmail = document.getElementById("login-email");
 /*
 	const variable can't change
 	document.getElementById gets a refence to the element in html

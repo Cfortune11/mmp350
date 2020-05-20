@@ -26,7 +26,7 @@ fb.logout = function() {
 };
 
 fb.onError = function(message) {
-	if (typeof onError === 'function') onError(message);
+	if (typeof onError === 'function') onError(error.message);
 };
 
 fb.getUsers = function(userCallback, callback) {
@@ -65,14 +65,14 @@ fb.loadPost = function(id) {
 fb.getUserProfile = function(uid) {
 	firebase.database().ref('users').child(uid).on('value', user => {
 		if (typeof displayProfile === "function") 
-			displayProfile(user.val().displayName, user.val().bio, user.val().imageURL);
+			displayProfile(user.val().displayName, user.val());
 	});
 };
 
 fb.updateProfile = function(id, key, value) {
 	const info = {};
 	info[key] = value;
-	firebase.database().ref('users').child(uid).update(info);
+	firebase.database().ref('users').child(id).update(info);
 };
 
 fb.uploadImage = function(file, uid) {
@@ -92,7 +92,7 @@ fb.publishPost = function(uid, text) {
 		uid: uid,
 		date: Date.now(),
 		text: text
-	}
+	};
 
 	const tags = postText.value.match(/#[a-z0-9]+/gi);
 	if (tags) {
@@ -103,8 +103,7 @@ fb.publishPost = function(uid, text) {
 		}
 	}
 
-	firebase.database().ref('posts')
-		.push(post);
+	firebase.database().ref('posts').push(post);
 };
 
 fb.getUID = function() {
