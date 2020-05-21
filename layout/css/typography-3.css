@@ -1,0 +1,46 @@
+/*
+	font-family: 'Anton', ;
+font-family: 'Tomorrow', ;
+
+*/
+
+.post,
+input {
+	font-family:'Anton', serif;
+}
+
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Tomorrow', cursive;
+}
+
+button {
+	font-size: 1.125em;
+}
+
+
+.post {
+	line-height: 1.2;
+}
+
+.post-text {
+	font-size: 1.25em;
+}
+
+.post-info {
+	color: gray;
+}
+
+.post-author {
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color: darkblue;
+}
+
+.post-date {
+	font-size: 0.5em;
+}
