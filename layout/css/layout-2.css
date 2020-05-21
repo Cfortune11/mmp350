@@ -4,7 +4,7 @@
 	grid-gap: 2em;
 
 	grid-template-areas:
-		"title login"
+		"login title"
 		"publish posts"
 		"publish posts"
 		"nothing posts"
