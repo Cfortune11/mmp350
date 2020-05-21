@@ -1,28 +1,36 @@
 #container {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-gap: 2em;
 
-	grid-template-areas:
-		"login title"
-		"posts publish"
-		"publish posts"
-		"nothing posts"
-	;
+	min-width: 640px;
+	max-width: 960px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1em;
 }
 
 #title {
-	grid-area: title;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 1 / span 1;
 }
 
-#login, #user-info {
-	grid-area: login;
+#user-info {
+	grid-column: 2 / 3;
+	grid-row: 2 / span 1;
+}
+
+#login {
+	grid-column: 2 / 3;
+	grid-row: 2 / span 1;
 }
 
 #publish-post {
-	grid-area: publish;
+	grid-column: 2 / span 1;
+	grid-row: 3 / span 1;
 }
 
 #posts {
-	grid-area: posts;
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 4;
 }
