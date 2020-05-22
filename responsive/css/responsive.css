@@ -18,8 +18,8 @@
 		grid-template-columns: 100%;
 		grid-template-areas:
 			"title"
-			"menu"
 			"publish"
+			"menu"
 			"main"
 		;
 	}
@@ -64,8 +64,8 @@
 
 		grid-template-columns: 1fr 2fr;
 		grid-template-areas: 
-			"title menu"
-			"publish main"
+			"title publish"
+			"menu main"
 			"nothing main"
 		;
 	}
