@@ -35,7 +35,7 @@ fb.getUsers = function(userCallback, callback) {
 	firebase.database().ref('users').on('child_added', user => {
 		users[user.key] = user.val();
 		count += 1;
-		if (userCallback) userCallback(user.key, user.val().displayName, user.val().bio, user.val().imageURL);
+		if (userCallback) userCallback(user.key, user.val().displayName, user.val().bio, user.val().imageURL, user.val());
 	});
 
 	firebase.database().ref('users').once('value', snapshot => {
@@ -120,7 +120,7 @@ fb.getUID = function() {
 	return firebase.auth().currentUser.uid;
 };
 
-fb.getTag = function(tag) {
+fb.loadTagPosts = function(tag) {
 	fb.getUsers(undefined, users => {
 		firebase.database().ref('posts').orderByChild('tags/'+tag).equalTo(true)
 			.on('child_added', post => {
@@ -129,7 +129,21 @@ fb.getTag = function(tag) {
 	});
 };
 
-fb.getUserPosts = function(uid) {
+fb.tagText = function(postData) {
+	if (postData.tags) {
+		var textHTML = postData.text;
+		for (const tag in postData.tags) {
+			const re = new RegExp('#'+tag, 'g');
+			textHTML = textHTML.replace(re, '<a href="tag.html?tag=' + tag + '">#' + tag + '</a>');
+		}
+		return textHTML;
+	}
+	else {
+		return postData.text;
+	}
+};
+
+fb.loadUserPosts = function(uid) {
 	firebase.database().ref('users').child(uid)
 		.on('value', user => {
 			firebase.database().ref('posts').orderByChild('uid').equalTo(uid)
@@ -168,7 +182,7 @@ js.getEl = function(id) {
 js.createEl = function(tag, _class, text) {
 	const element = document.createElement(tag);
 	element.classList.add(_class);
-	element.textContent = text;
+	if (text) element.innerHTML = text;
 	return element;
 };
 

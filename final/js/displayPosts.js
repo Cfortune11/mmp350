@@ -21,7 +21,7 @@ function createPost(postData, userInfo, postId) {
 	if (userInfo.imageURL) {
 		userImage.src = userInfo.imageURL;
 	} else {
-		userImage.src = "img/red-dead-dutch.jpg";
+		userImage.src = "img/egg.jpg";
 	}
 	userImage.onclick = function() {
 		location.href = 'profile.html?uid=' + postData.uid;
