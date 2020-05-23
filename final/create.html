@@ -3,13 +3,13 @@
 <head>
   <title>MMP 350</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="style.css" rel="stylesheet" type="text/css">
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
 
   <script>
     // Your web app's Firebase configuration
@@ -31,38 +31,19 @@
 <body>
   <div id="container">
     <div id="title">
-      <h1>MMP 350 Site</h1>
+      <h1><a href="index.html">MMP 350 Site</a></h1>
     </div>
-
-    <div id="user-info">
-      <p id="user-name"></p>
-      <a id="edit-profile-link">Edit Profile</a>
-      <button id="logout-button">Logout</button>
-    </div>
-
-    <div id="login">
-      <input id="login-email" type="text" placeholder="Email">
-      <input id="login-password" type="password" placeholder="Password">
-      <button id="login-button">Login</button>
-      <p id="login-message"></p>
-      <p><a href="create.html">Create a new account</a></p>
-    </div>
-
-    <div id="publish-post">
-      <textarea id="publish-text" placeholder="Compose your post..."></textarea>
-      <button id="publish-button">Publish</button>
-    </div>
-
-    <div id="posts"></div>
     
+    <div id="sign-up">
+      <input id="sign-up-username" type="text" placeholder="Username">
+      <input id="sign-up-email" type="text" placeholder="Email">
+      <input id="sign-up-password" type="password" placeholder="Password">
+      <button id="sign-up-button">Sign Up</button>
+      <p id="sign-up-message"></p>
+    </div>
   </div>
 
   <script src="js/helpers.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/publish.js"></script>
-  <script src="js/displayPosts.js"></script>
-  <script>
-    fb.loadPosts();
-  </script>
+  <script src="js/create.js"></script>
 </body>
 </html>
